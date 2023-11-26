@@ -7,6 +7,9 @@ a complete analysis of a Brazilian e-commerce dataset derived from orders made o
 conda create --name main-ds python=3.10
 conda activate main-ds
 ```
+## Demo App
+Olist Store Streamlit Dashboard [URL Streamlit](https://oliststoreanalysis.streamlit.app/).
+
 ## Run steamlit app
 ```
 streamlit run dashboard/dashboard.py
