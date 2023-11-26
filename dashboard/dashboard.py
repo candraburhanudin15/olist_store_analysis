@@ -140,8 +140,12 @@ with st.sidebar:
         label='Rentang Waktu',
         min_value=min_date,
         max_value=max_date,
-        value=[max_date]
+        value=[min_date, max_date]
     )
+if start_date is not None and end_date is not None:
+    st.success(f"Rentang Data: {start_date} hingga {end_date}")
+else:
+    st.warning("Silahkan input rentang tanggal.")
 
 main_df = all_df[(all_df['order_purchase_timestamp'] >= str(start_date)) & 
                 (all_df['order_purchase_timestamp'] <= str(end_date))]
